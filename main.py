@@ -3968,7 +3968,7 @@ async def info_page(
         svg_points = f"0,50 300,{60 - min(60, max(4, (usage_history[0] / (limit if limit > 0 else max(used, 1))) * 52)):.1f}"
 
     status_badge_html = 'text-emerald-300 border border-emerald-400/25 bg-emerald-400/10' if status_class == 'good' else 'text-rose-300 border border-rose-400/25 bg-rose-400/10'
-    label_escaped = escape_html(snapshot.get("label", "PXpanel"))
+    label_escaped = escape_html(snapshot.get("label", "#P.Y"))
     uid_escaped = escape_html(uid)
     app_version_str = escape_html(str(APP_VERSION))
     used_bytes_str = escape_html(fmt_bytes(used))
@@ -4080,7 +4080,7 @@ async def info_page(
         </div>
         <div class="min-w-0">
           <h1 class="text-lg sm:text-xl md:text-2xl font-black tracking-tight truncate">{label_escaped}</h1>
-          <p class="mt-1.5 text-[10.5px] sm:text-[11px] text-white/40 break-all">UUID: {uid_escaped} &nbsp;·&nbsp; PXpanel {app_version_str}</p>
+          <p class="mt-1.5 text-[10.5px] sm:text-[11px] text-white/40 break-all">UUID: {uid_escaped} &nbsp;·&nbsp; #P.Y {app_version_str}</p>
         </div>
       </div>
       <div class="flex items-center gap-2.5 self-start md:self-auto flex-wrap">
@@ -4357,7 +4357,7 @@ async def info_page(
 
   <!-- Footer -->
   <div class="rounded-2xl border border-emerald-400/15 bg-emerald-400/[0.05] p-4 text-center text-xs text-white/45">
-    پشتیبانی و اطلاعیه‌ها &nbsp;·&nbsp; <b class="text-emerald-300">کانال تلگرام: logic_sec</b>
+    پشتیبانی و اطلاعیه‌ها &nbsp;·&nbsp; <b class="text-emerald-300">ساخته شده توسط : @SaYPouYa</b>
   </div>
 
 </div>
