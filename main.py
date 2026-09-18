@@ -3968,7 +3968,7 @@ async def info_page(
         svg_points = f"0,50 300,{60 - min(60, max(4, (usage_history[0] / (limit if limit > 0 else max(used, 1))) * 52)):.1f}"
 
     status_badge_html = 'text-emerald-300 border border-emerald-400/25 bg-emerald-400/10' if status_class == 'good' else 'text-rose-300 border border-rose-400/25 bg-rose-400/10'
-    label_escaped = escape_html(snapshot.get("label", "#P.Y"))
+    label_escaped = escape_html(snapshot.get("label", "PXpanel"))
     uid_escaped = escape_html(uid)
     app_version_str = escape_html(str(APP_VERSION))
     used_bytes_str = escape_html(fmt_bytes(used))
