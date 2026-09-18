@@ -37,8 +37,8 @@ from fastapi.middleware.cors import CORSMiddleware
 # APP
 # ============================================================
 
-APP_NAME = "PXPanel"
-APP_VERSION = "13.10.0"
+APP_NAME = "#P.Y"
+APP_VERSION = "@SaYPouYA"
 
 SUPPORT_USERNAME = "@saypouya"
 SUPPORT_URL = "https://t.me/Saypouya"
