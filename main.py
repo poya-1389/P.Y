@@ -40,8 +40,8 @@ from fastapi.middleware.cors import CORSMiddleware
 APP_NAME = "PXPanel"
 APP_VERSION = "13.10.0"
 
-SUPPORT_USERNAME = "@logic_sec"
-SUPPORT_URL = "https://t.me/logic_sec"
+SUPPORT_USERNAME = "@saypouya"
+SUPPORT_URL = "https://t.me/Saypouya"
 
 logging.basicConfig(
     level=logging.INFO,
